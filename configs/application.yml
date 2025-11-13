@@ -1,5 +1,14 @@
+spring:
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
+
 management:
   endpoints:
     web:
       exposure:
         include: refresh
+  endpoint:
+    prometheus:
+      enabled: true
